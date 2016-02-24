@@ -108,7 +108,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
 :: 4. Move packages around
 IF EXIST "%DEPLOYMENT_TARGET%\node_modules" (
     pushd "%DEPLOYMENT_TARGET%"
-    mv "%DEPLOYMENT_TARGET%\node_modules\jquery\dist\jquery.min.js" "public"
+    mv "%DEPLOYMENT_TARGET%\node_modules\jquery\dist\jquery.min.js" "%DEPLOYMENT_TARGET%\public"
 )
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
